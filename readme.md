@@ -1,3 +1,5 @@
+# Assignment Completed: 21 April 2025 (local Storage)
+
 # Password Strength Meter & Generator
 
 A user-friendly web app built with Streamlit to evaluate password strength, provide actionable feedback, and generate strong, customizable passwords.  
