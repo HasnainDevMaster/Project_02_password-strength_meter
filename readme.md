@@ -1,85 +1,113 @@
-# Assignment Completed: 21 April 2025 (local Storage)
+# 🔐 Password Strength Meter & Generator  
 
-# Password Strength Meter & Generator
+**A friendly and powerful web app built with Streamlit** to **evaluate password strength**, offer **actionable feedback**, and **generate secure passwords** tailored to your needs.  
 
-A user-friendly web app built with Streamlit to evaluate password strength, provide actionable feedback, and generate strong, customizable passwords.  
-Easily check your password security and generate secure passwords for your accounts.
+---
 
-## Features
+## ⚡ Features  
 
-- **Password Strength Meter:**  
-  - Evaluates password strength using customizable or default scoring.
-  - Provides clear feedback and suggestions for improvement.
-  - Detects common/blacklisted weak passwords.
 
-- **Customizable Scoring:**  
-  - Adjust weights for length, uppercase, lowercase, digits, and symbols.
+### 🧾 Password Strength Meter  
 
-- **Password Generator:**  
-  - Generate one or more strong passwords.
-  - Customize length and character types (uppercase, lowercase, digits, symbols).
-  - Download generated passwords as a `.txt` file.
+- ✅ Instantly evaluate password strength with a **clear score**, descriptive strength level, and helpful suggestions.  
+- ⚖️ Toggle **Custom Weight Scoring** to adjust how much factors like length, uppercase, digits, or symbols influence your score.  
+- 🚫 Automatically flags **common or weak passwords** using a blacklist check.  
 
-## Getting Started
+### 🎲 Password Generator  
 
-### Prerequisites
+- 🔑 Easily generate **one or multiple strong passwords**.  
+- 🛠️ Fully **customizable**: choose length, include uppercase, lowercase, digits, and symbols.  
+- 💾 Option to **download** generated passwords as a `.txt` file for safekeeping.  
 
-- Python 3.8+
-- [pip](https://pip.pypa.io/en/stable/)
+### 🔧 Customization & Extensibility  
 
-### Installation
+- 🎚️ Tweak scoring logic, adjust weights, or expand the blacklist via the `password_utils.py` module.  
 
-1. **Clone the repository:**
-    ```sh
-    git clone https://github.com/HasnainDevMaster/Project_02_password-strength_meter
-    cd password-strength-meter
-    ```
+---
 
-2. **Install dependencies:**
-    ```sh
-    pip install -r requirements.txt
-    ```
+## ⚙️ Getting Started  
 
-### Running the App Locally
+### 📋 Prerequisites  
 
-```sh
+- 🐍 Python 3.8 or higher  
+- 📦 `pip` for installing dependencies  
+
+### 💻 Installation  
+
+```bash
+git clone https://github.com/HasnainDevMaster/Project_02_password-strength_meter
+cd Project_02_password-strength_meter
+pip install -r requirements.txt
+````
+
+### ▶️ Launch the App
+
+```bash
 streamlit run app.py
 ```
 
-### Try it Online
+### ☁️ Or Try It Online
 
-You can use the app instantly without installation at:  
-[https://hasnaindevmaster-project-02-password-strength-meter-app-q0utgm.streamlit.app/](https://hasnaindevmaster-project-02-password-strength-meter-app-q0utgm.streamlit.app/)
+Use the **Streamlit-hosted version** for quick testing:
+🔗 [Live App Link](https://github.com/HasnainDevMaster/Project_02_password-strength_meter/tree/main)
 
-## Usage
+---
 
-### 1. Test Your Password
+## 📚 Usage Guide
 
-- Enter a password in the input field.
-- (Optional) Enable "Use Custom Weight Scoring" to adjust how different criteria affect the score.
-- View your password's score, strength, and suggestions for improvement.
+### A. 🔍 Testing Your Password
 
-### 2. Generate Password(s)
+1. ✏️ Type your password into the input field.
+2. ⚙️ Optional: Enable **Custom Weight Scoring** to suit your preference.
+3. 📊 Review your password’s **strength, score, and improvement tips**.
 
-- Set desired password length and number of passwords.
-- Choose which character types to include.
-- Click "Generate Passwords" to see results.
-- Download generated passwords as a `.txt` file.
+### B. 🎲 Generating Passwords
 
-## Password Evaluation Criteria
+1. 🔢 Choose how many passwords you want and their length.
+2. 🔡 Pick character types (uppercase, lowercase, digits, symbols).
+3. 🎉 Click **"Generate Passwords"** to get results.
+4. 💾 Optionally, download them as a `.txt` file.
 
-- **Length:** Minimum 8 characters recommended.
-- **Uppercase:** At least one uppercase letter.
-- **Lowercase:** At least one lowercase letter.
-- **Digits:** At least one digit.
-- **Symbols:** At least one special character (`!@#$%^&*`).
-- **Blacklist:** Common passwords are flagged as weak.
+---
 
-## Customization
+## 🧠 How It Works
 
-You can modify the password evaluation logic or blacklist in `password_utils.py` to suit your needs.
+The password evaluation considers:
 
-## Acknowledgements
+* 📏 **Length** (8+ characters recommended)
+* 🔠 **Uppercase letters**
+* 🔡 **Lowercase letters**
+* 🔢 **Digits**
+* 🔣 **Symbols** (e.g., `!@#$%^&*`)
+* 🚫 **Blacklist**: Common passwords are flagged as weak for better security
 
-- [Streamlit](https://streamlit.io/)
-- [Python Standard Library](https://docs.python.org/3/library/)
+---
+
+## 🛠️ Customize & Extend
+
+Want to tweak the app? Head to `password_utils.py`—you can:
+
+* 🔄 Change the **scoring logic** or weights
+* 📝 Update the **blacklist**
+* 💡 Enhance the feedback system
+
+Great for adapting to your project’s specific security needs!
+
+---
+
+## 🙏 Acknowledgements & Thanks
+
+* 🎨 Built using **[Streamlit](https://streamlit.io/)** — for powering the UI quickly and elegantly
+* 🐍 Powered by the **Python Standard Library** for simplicity and robustness
+
+---
+
+## 🎯 Final Thoughts
+
+This app makes **password testing and generation a breeze** — perfect whether you're:
+
+* 🧑‍🎓 Learning security concepts
+* 💻 Building a real-world project
+* 🔒 Just wanting stronger, safer passwords
+
+🔐 Stay safe & happy coding! 🚀
